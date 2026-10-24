@@ -1,0 +1,26 @@
+[symbol]
+name = "SKY130 NPN 5.5V"
+artwork = "generic:npn_bjt.svg"
+category = "Transistor"
+
+[[pin]]
+name = "B"
+x = -32
+y = 0
+direction = "input"
+
+[[pin]]
+name = "C"
+x = 31
+y = 32
+direction = "inout"
+
+[[pin]]
+name = "E"
+x = 31
+y = -32
+direction = "inout"
+
+[[parameter]]
+name = "model"
+value = "sky130_fd_pr__npn_05v5"

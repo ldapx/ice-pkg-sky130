@@ -1,0 +1,20 @@
+[symbol]
+name = "SKY130 Diode 5.5V"
+artwork = "generic:diode.svg"
+category = "Semiconductor"
+
+[[pin]]
+name = "A"
+x = -21
+y = 0
+direction = "input"
+
+[[pin]]
+name = "K"
+x = 21
+y = 0
+direction = "output"
+
+[[parameter]]
+name = "model"
+value = "sky130_fd_pr__diode_pw2nd_05v5"

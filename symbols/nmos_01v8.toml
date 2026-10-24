@@ -1,0 +1,44 @@
+[symbol]
+name = "SKY130 NMOS 1.8V"
+artwork = "generic:nmos.svg"
+category = "Transistor"
+
+[[pin]]
+name = "G"
+x = -32
+y = 11
+direction = "input"
+
+[[pin]]
+name = "D"
+x = 32
+y = 13
+direction = "inout"
+
+[[pin]]
+name = "S"
+x = 32
+y = -11
+direction = "inout"
+
+[[pin]]
+name = "B"
+x = 32
+y = 0
+direction = "inout"
+
+[[parameter]]
+name = "model"
+value = "sky130_fd_pr__nfet_01v8"
+
+[[parameter]]
+name = "w"
+value = "1u"
+
+[[parameter]]
+name = "l"
+value = "0.15u"
+
+[[parameter]]
+name = "m"
+value = "1"

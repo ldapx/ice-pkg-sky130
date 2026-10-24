@@ -1,0 +1,73 @@
+[package]
+schema_version = 1
+name = "sky130"
+version = "0.1.0"
+description = "SkyWater SKY130 130 nm CMOS open-source PDK"
+license = "Apache-2.0"
+
+[source]
+type = "git"
+url = "https://github.com/google/skywater-pdk.git"
+revision = "main"
+
+[provides]
+pdk = true
+models = true
+symbols = true
+layout = true
+verification = true
+
+[trust]
+trusted = false
+
+[pdk]
+display_name = "SkyWater SKY130"
+default_schematic = "sky130_top"
+
+[[pdk.layer]]
+name = "nwell"
+number = 64
+
+[[pdk.layer]]
+name = "diff"
+number = 65
+
+[[pdk.layer]]
+name = "poly"
+number = 66
+
+[[pdk.layer]]
+name = "li1"
+number = 67
+
+[[pdk.layer]]
+name = "met1"
+number = 68
+
+[[pdk.layer]]
+name = "met2"
+number = 69
+
+[[pdk.layer]]
+name = "met3"
+number = 70
+
+[[pdk.layer]]
+name = "met4"
+number = 71
+
+[[pdk.layer]]
+name = "met5"
+number = 72
+
+[[pdk.layer]]
+name = "capm"
+number = 89
+
+[[pdk.layer]]
+name = "cap2m"
+number = 97
+
+[[pdk.layer]]
+name = "pad"
+number = 76
