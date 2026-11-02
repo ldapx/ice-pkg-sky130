@@ -5,9 +5,9 @@ definition for ICE. It points to the upstream PDK repository:
 
 <https://github.com/google/skywater-pdk>
 
-The upstream PDK is treated as an external package source and remains subject
-to its own Apache-2.0 license, installation prerequisites, and verification
-status.
+The package also contains the Sky130 ngspice simulation subset under
+`libs.tech/ngspice` and `libs.ref/sky130_fd_pr/spice`. Simulation depends only
+on this ICE package, not on Volare, CIEL, or `PDK_ROOT`.
 
 ## PDK metadata
 
@@ -27,3 +27,9 @@ The package ships sidecar definitions for core SKY130 devices:
 
 The sidecars reference ICE's shared artwork with `generic:<file>.svg`, so the
 package does not include duplicate SVG files.
+
+## Simulation
+
+The package declares `[pdk.simulation]` in `package.toml`: `.option scale=1u`,
+`sky130.lib.spice`, section `tt`, and the Sky130 NMOS/PMOS device names. Verify
+with `ice-cli pdk-info sky130A --probe`.

@@ -24,6 +24,22 @@ trusted = false
 display_name = "SkyWater SKY130"
 default_schematic = "sky130_top"
 
+id = "sky130A"
+aliases = ["sky130", "sky130a"]
+
+[pdk.simulation]
+engine = "ngspice"
+root = "libs.tech/ngspice"
+model_file = "sky130.lib.spice"
+section = "tt"
+includes = []
+options = [".option scale=1u"]
+requires_osdi = false
+
+[pdk.simulation.devices]
+nmos = "sky130_fd_pr__nfet_01v8"
+pmos = "sky130_fd_pr__pfet_01v8"
+
 [[pdk.layer]]
 name = "nwell"
 number = 64
