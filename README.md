@@ -41,6 +41,11 @@ The package ships ICE-native PCell replicas under `layout/`:
 - `layout/device_generator.py` regenerates geometry when a parameter changes.
 - `layout/generate_devices.py` rebuilds the library from the PCell definitions.
 
+The device library also records the SKY130 purpose datatypes (`drawing` uses
+datatype 20; `pin`, `label`, `boundary`, `net`, `blockage`, and marker purposes
+use their PDK datatypes). ICE groups these under their base layer number and
+keeps non-drawing purposes hidden by default.
+
 The PCells do not require KLayout, gdsfactory, Volare, CIEL, or `PDK_ROOT`.
 Regenerate the library after editing `layout/pcells.py`:
 

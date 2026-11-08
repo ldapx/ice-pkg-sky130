@@ -41,49 +41,61 @@ nmos = "sky130_fd_pr__nfet_01v8"
 pmos = "sky130_fd_pr__pfet_01v8"
 
 [[pdk.layer]]
-name = "nwell"
+name = "nwell.drawing"
 number = 64
+datatype = 20
 
 [[pdk.layer]]
-name = "diff"
+name = "diff.drawing"
 number = 65
+datatype = 20
 
 [[pdk.layer]]
-name = "poly"
+name = "poly.drawing"
 number = 66
+datatype = 20
 
 [[pdk.layer]]
-name = "li1"
+name = "li1.drawing"
 number = 67
+datatype = 20
 
 [[pdk.layer]]
-name = "met1"
+name = "met1.drawing"
 number = 68
+datatype = 20
 
 [[pdk.layer]]
-name = "met2"
+name = "met2.drawing"
 number = 69
+datatype = 20
 
 [[pdk.layer]]
-name = "met3"
+name = "met3.drawing"
 number = 70
+datatype = 20
 
 [[pdk.layer]]
-name = "met4"
+name = "met4.drawing"
 number = 71
+datatype = 20
 
 [[pdk.layer]]
-name = "met5"
+name = "met5.drawing"
 number = 72
+datatype = 20
 
 [[pdk.layer]]
-name = "capm"
+name = "capm.drawing"
 number = 89
+datatype = 44
 
 [[pdk.layer]]
-name = "cap2m"
+name = "cap2m.drawing"
 number = 97
+datatype = 44
 
 [[pdk.layer]]
-name = "pad"
+name = "pad.drawing"
 number = 76
+datatype = 20

@@ -1,0 +1,725 @@
+{
+  "schema_version": 1,
+  "layers": [
+    {
+      "name": "nwell.label",
+      "number": 64,
+      "datatype": 5,
+      "color": "#b07d4f",
+      "pattern": "Horizontal",
+      "visible": false
+    },
+    {
+      "name": "nwell.pin",
+      "number": 64,
+      "datatype": 16,
+      "color": "#b07d4f",
+      "pattern": "Diagonal /",
+      "visible": false
+    },
+    {
+      "name": "nwell.drawing",
+      "number": 64,
+      "datatype": 20,
+      "color": "#b07d4f",
+      "pattern": "Solid",
+      "visible": false
+    },
+    {
+      "name": "diff.boundary",
+      "number": 65,
+      "datatype": 4,
+      "color": "#2ecc71",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "diff.label",
+      "number": 65,
+      "datatype": 6,
+      "color": "#2ecc71",
+      "pattern": "Horizontal",
+      "visible": false
+    },
+    {
+      "name": "diff.hv",
+      "number": 65,
+      "datatype": 8,
+      "color": "#2ecc71",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "diff.res",
+      "number": 65,
+      "datatype": 13,
+      "color": "#2ecc71",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "diff.cut",
+      "number": 65,
+      "datatype": 14,
+      "color": "#2ecc71",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "diff.pin",
+      "number": 65,
+      "datatype": 16,
+      "color": "#2ecc71",
+      "pattern": "Diagonal /",
+      "visible": false
+    },
+    {
+      "name": "diff.drawing",
+      "number": 65,
+      "datatype": 20,
+      "color": "#2ecc71",
+      "pattern": "Solid",
+      "visible": false
+    },
+    {
+      "name": "diff.net",
+      "number": 65,
+      "datatype": 23,
+      "color": "#2ecc71",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "poly.boundary",
+      "number": 66,
+      "datatype": 4,
+      "color": "#d35400",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "poly.label",
+      "number": 66,
+      "datatype": 5,
+      "color": "#d35400",
+      "pattern": "Horizontal",
+      "visible": false
+    },
+    {
+      "name": "poly.gate",
+      "number": 66,
+      "datatype": 9,
+      "color": "#d35400",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "poly.res",
+      "number": 66,
+      "datatype": 13,
+      "color": "#d35400",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "poly.cut",
+      "number": 66,
+      "datatype": 14,
+      "color": "#d35400",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "poly.short",
+      "number": 66,
+      "datatype": 15,
+      "color": "#d35400",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "poly.pin",
+      "number": 66,
+      "datatype": 16,
+      "color": "#d35400",
+      "pattern": "Diagonal /",
+      "visible": false
+    },
+    {
+      "name": "poly.drawing",
+      "number": 66,
+      "datatype": 20,
+      "color": "#d35400",
+      "pattern": "Solid",
+      "visible": false
+    },
+    {
+      "name": "poly.net",
+      "number": 66,
+      "datatype": 23,
+      "color": "#d35400",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "poly.probe",
+      "number": 66,
+      "datatype": 25,
+      "color": "#d35400",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "poly.model",
+      "number": 66,
+      "datatype": 83,
+      "color": "#d35400",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "li1.boundary",
+      "number": 67,
+      "datatype": 4,
+      "color": "#16a085",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "li1.label",
+      "number": 67,
+      "datatype": 5,
+      "color": "#16a085",
+      "pattern": "Horizontal",
+      "visible": false
+    },
+    {
+      "name": "li1.blockage",
+      "number": 67,
+      "datatype": 10,
+      "color": "#16a085",
+      "pattern": "Diagonal \\",
+      "visible": false
+    },
+    {
+      "name": "li1.res",
+      "number": 67,
+      "datatype": 13,
+      "color": "#16a085",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "li1.cut",
+      "number": 67,
+      "datatype": 14,
+      "color": "#16a085",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "li1.short",
+      "number": 67,
+      "datatype": 15,
+      "color": "#16a085",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "li1.pin",
+      "number": 67,
+      "datatype": 16,
+      "color": "#16a085",
+      "pattern": "Diagonal /",
+      "visible": false
+    },
+    {
+      "name": "li1.drawing",
+      "number": 67,
+      "datatype": 20,
+      "color": "#16a085",
+      "pattern": "Solid",
+      "visible": false
+    },
+    {
+      "name": "li1.net",
+      "number": 67,
+      "datatype": 23,
+      "color": "#16a085",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "li1.probe",
+      "number": 67,
+      "datatype": 25,
+      "color": "#16a085",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met1.boundary",
+      "number": 68,
+      "datatype": 4,
+      "color": "#b82e2e",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met1.label",
+      "number": 68,
+      "datatype": 5,
+      "color": "#b82e2e",
+      "pattern": "Horizontal",
+      "visible": false
+    },
+    {
+      "name": "met1.blockage",
+      "number": 68,
+      "datatype": 10,
+      "color": "#b82e2e",
+      "pattern": "Diagonal \\",
+      "visible": false
+    },
+    {
+      "name": "met1.res",
+      "number": 68,
+      "datatype": 13,
+      "color": "#b82e2e",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met1.cut",
+      "number": 68,
+      "datatype": 14,
+      "color": "#b82e2e",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met1.short",
+      "number": 68,
+      "datatype": 15,
+      "color": "#b82e2e",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met1.pin",
+      "number": 68,
+      "datatype": 16,
+      "color": "#b82e2e",
+      "pattern": "Diagonal /",
+      "visible": false
+    },
+    {
+      "name": "met1.drawing",
+      "number": 68,
+      "datatype": 20,
+      "color": "#b82e2e",
+      "pattern": "Solid",
+      "visible": false
+    },
+    {
+      "name": "met1.net",
+      "number": 68,
+      "datatype": 23,
+      "color": "#b82e2e",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met1.probe",
+      "number": 68,
+      "datatype": 25,
+      "color": "#b82e2e",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met2.boundary",
+      "number": 69,
+      "datatype": 4,
+      "color": "#316395",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met2.label",
+      "number": 69,
+      "datatype": 5,
+      "color": "#316395",
+      "pattern": "Horizontal",
+      "visible": false
+    },
+    {
+      "name": "met2.blockage",
+      "number": 69,
+      "datatype": 10,
+      "color": "#316395",
+      "pattern": "Diagonal \\",
+      "visible": false
+    },
+    {
+      "name": "met2.res",
+      "number": 69,
+      "datatype": 13,
+      "color": "#316395",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met2.cut",
+      "number": 69,
+      "datatype": 14,
+      "color": "#316395",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met2.short",
+      "number": 69,
+      "datatype": 15,
+      "color": "#316395",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met2.pin",
+      "number": 69,
+      "datatype": 16,
+      "color": "#316395",
+      "pattern": "Diagonal /",
+      "visible": false
+    },
+    {
+      "name": "met2.drawing",
+      "number": 69,
+      "datatype": 20,
+      "color": "#316395",
+      "pattern": "Solid",
+      "visible": false
+    },
+    {
+      "name": "met2.net",
+      "number": 69,
+      "datatype": 23,
+      "color": "#316395",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met2.probe",
+      "number": 69,
+      "datatype": 25,
+      "color": "#316395",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met3.boundary",
+      "number": 70,
+      "datatype": 4,
+      "color": "#994499",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met3.label",
+      "number": 70,
+      "datatype": 5,
+      "color": "#994499",
+      "pattern": "Horizontal",
+      "visible": false
+    },
+    {
+      "name": "met3.blockage",
+      "number": 70,
+      "datatype": 10,
+      "color": "#994499",
+      "pattern": "Diagonal \\",
+      "visible": false
+    },
+    {
+      "name": "met3.res",
+      "number": 70,
+      "datatype": 13,
+      "color": "#994499",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met3.cut",
+      "number": 70,
+      "datatype": 14,
+      "color": "#994499",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met3.short",
+      "number": 70,
+      "datatype": 15,
+      "color": "#994499",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met3.pin",
+      "number": 70,
+      "datatype": 16,
+      "color": "#994499",
+      "pattern": "Diagonal /",
+      "visible": false
+    },
+    {
+      "name": "met3.fuse",
+      "number": 70,
+      "datatype": 17,
+      "color": "#994499",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met3.drawing",
+      "number": 70,
+      "datatype": 20,
+      "color": "#994499",
+      "pattern": "Solid",
+      "visible": false
+    },
+    {
+      "name": "met3.net",
+      "number": 70,
+      "datatype": 23,
+      "color": "#994499",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met3.probe",
+      "number": 70,
+      "datatype": 25,
+      "color": "#994499",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met4.boundary",
+      "number": 71,
+      "datatype": 4,
+      "color": "#22aa99",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met4.label",
+      "number": 71,
+      "datatype": 5,
+      "color": "#22aa99",
+      "pattern": "Horizontal",
+      "visible": false
+    },
+    {
+      "name": "met4.blockage",
+      "number": 71,
+      "datatype": 10,
+      "color": "#22aa99",
+      "pattern": "Diagonal \\",
+      "visible": false
+    },
+    {
+      "name": "met4.res",
+      "number": 71,
+      "datatype": 13,
+      "color": "#22aa99",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met4.cut",
+      "number": 71,
+      "datatype": 14,
+      "color": "#22aa99",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met4.short",
+      "number": 71,
+      "datatype": 15,
+      "color": "#22aa99",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met4.pin",
+      "number": 71,
+      "datatype": 16,
+      "color": "#22aa99",
+      "pattern": "Diagonal /",
+      "visible": false
+    },
+    {
+      "name": "met4.fuse",
+      "number": 71,
+      "datatype": 17,
+      "color": "#22aa99",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met4.drawing",
+      "number": 71,
+      "datatype": 20,
+      "color": "#22aa99",
+      "pattern": "Solid",
+      "visible": false
+    },
+    {
+      "name": "met4.net",
+      "number": 71,
+      "datatype": 23,
+      "color": "#22aa99",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met4.probe",
+      "number": 71,
+      "datatype": 25,
+      "color": "#22aa99",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met5.boundary",
+      "number": 72,
+      "datatype": 4,
+      "color": "#3366cc",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met5.label",
+      "number": 72,
+      "datatype": 5,
+      "color": "#3366cc",
+      "pattern": "Horizontal",
+      "visible": false
+    },
+    {
+      "name": "met5.blockage",
+      "number": 72,
+      "datatype": 10,
+      "color": "#3366cc",
+      "pattern": "Diagonal \\",
+      "visible": false
+    },
+    {
+      "name": "met5.res",
+      "number": 72,
+      "datatype": 13,
+      "color": "#3366cc",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met5.cut",
+      "number": 72,
+      "datatype": 14,
+      "color": "#3366cc",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met5.short",
+      "number": 72,
+      "datatype": 15,
+      "color": "#3366cc",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met5.pin",
+      "number": 72,
+      "datatype": 16,
+      "color": "#3366cc",
+      "pattern": "Diagonal /",
+      "visible": false
+    },
+    {
+      "name": "met5.fuse",
+      "number": 72,
+      "datatype": 17,
+      "color": "#3366cc",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met5.drawing",
+      "number": 72,
+      "datatype": 20,
+      "color": "#3366cc",
+      "pattern": "Solid",
+      "visible": false
+    },
+    {
+      "name": "met5.net",
+      "number": 72,
+      "datatype": 23,
+      "color": "#3366cc",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "met5.probe",
+      "number": 72,
+      "datatype": 25,
+      "color": "#3366cc",
+      "pattern": "Dense dots",
+      "visible": false
+    },
+    {
+      "name": "pad.label",
+      "number": 76,
+      "datatype": 5,
+      "color": "#d4af37",
+      "pattern": "Horizontal",
+      "visible": false
+    },
+    {
+      "name": "pad.pin",
+      "number": 76,
+      "datatype": 16,
+      "color": "#d4af37",
+      "pattern": "Diagonal /",
+      "visible": false
+    },
+    {
+      "name": "pad.drawing",
+      "number": 76,
+      "datatype": 20,
+      "color": "#d4af37",
+      "pattern": "Solid",
+      "visible": false
+    },
+    {
+      "name": "capm.drawing",
+      "number": 89,
+      "datatype": 44,
+      "color": "#1abc9c",
+      "pattern": "Solid",
+      "visible": false
+    },
+    {
+      "name": "cap2m.drawing",
+      "number": 97,
+      "datatype": 44,
+      "color": "#16a085",
+      "pattern": "Solid",
+      "visible": false
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "format": "ice-device-extraction",
+  "schema_version": 1,
+  "pdk": "sky130A",
+  "devices": [
+    {
+      "name": "nmos",
+      "type": "mos",
+      "model": "sky130_fd_pr__nfet_01v8",
+      "element": "X",
+      "active": "diff",
+      "gate": "poly",
+      "exclude_layers": ["nwell"],
+      "terminal_layers": ["li1", "met1"],
+      "substrate": "0",
+      "length_axis": "auto"
+    },
+    {
+      "name": "pmos",
+      "type": "mos",
+      "model": "sky130_fd_pr__pfet_01v8",
+      "element": "X",
+      "active": "diff",
+      "gate": "poly",
+      "require_layers": ["nwell"],
+      "body_layer": "nwell",
+      "terminal_layers": ["li1", "met1"],
+      "substrate": "0",
+      "length_axis": "auto"
+    },
+    {
+      "name": "mim_cap",
+      "type": "capacitor",
+      "model": "sky130_fd_pr__cap_mim_m3_1",
+      "element": "C",
+      "plates": ["capm", "met2"],
+      "capacitance_per_area": 2.0
+    }
+  ]
+}
