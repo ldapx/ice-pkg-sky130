@@ -16,6 +16,7 @@ models = true
 symbols = true
 layout = true
 verification = true
+implementation = true
 
 [trust]
 trusted = false
@@ -26,6 +27,22 @@ default_schematic = "sky130_top"
 
 id = "sky130A"
 aliases = ["sky130", "sky130a"]
+
+[pdk.implementation]
+engine = "openroad"
+synthesis = "yosys"
+min_openroad = "2.0"
+min_yosys = "0.40"
+site = "unithd"
+io_horizontal_layers = ["met3"]
+io_vertical_layers = ["met2"]
+routing_min_layer = "met1"
+routing_max_layer = "met5"
+
+[pdk.implementation.orfs]
+platform = "sky130hd"
+corner = "tt"
+liberty_pattern = "tt_025C_1v80"
 
 [pdk.simulation]
 engine = "ngspice"
