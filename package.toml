@@ -61,58 +61,70 @@ pmos = "sky130_fd_pr__pfet_01v8"
 name = "nwell.drawing"
 number = 64
 datatype = 20
+minimum_width = 840
 
 [[pdk.layer]]
 name = "diff.drawing"
 number = 65
 datatype = 20
+minimum_width = 150
 
 [[pdk.layer]]
 name = "poly.drawing"
 number = 66
 datatype = 20
+minimum_width = 150
 
 [[pdk.layer]]
 name = "li1.drawing"
 number = 67
 datatype = 20
+minimum_width = 170
 
 [[pdk.layer]]
 name = "met1.drawing"
 number = 68
 datatype = 20
+minimum_width = 140
 
 [[pdk.layer]]
 name = "met2.drawing"
 number = 69
 datatype = 20
+minimum_width = 140
 
 [[pdk.layer]]
 name = "met3.drawing"
 number = 70
 datatype = 20
+minimum_width = 300
 
 [[pdk.layer]]
 name = "met4.drawing"
 number = 71
 datatype = 20
+minimum_width = 300
 
 [[pdk.layer]]
 name = "met5.drawing"
 number = 72
 datatype = 20
+minimum_width = 1600
 
 [[pdk.layer]]
 name = "capm.drawing"
 number = 89
 datatype = 44
+minimum_width = 1000
 
 [[pdk.layer]]
 name = "cap2m.drawing"
 number = 97
 datatype = 44
+minimum_width = 1000
 
 [[pdk.layer]]
 name = "pad.drawing"
 number = 76
 datatype = 20
+minimum_width = 70000
