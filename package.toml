@@ -27,6 +27,7 @@ default_schematic = "sky130_top"
 
 id = "sky130A"
 aliases = ["sky130", "sky130a"]
+manufacturing_grid = 5
 
 [[pdk.layer]]
 name = "mcon.drawing"
@@ -214,25 +215,25 @@ synthesis = "yosys"
 min_openroad = "2.0"
 min_yosys = "0.40"
 site = "unithd"
-tech_lef = "implementation/lef/sky130_fd_sc_hd.tlef"
-cell_lef = "implementation/lef/sky130_fd_sc_hd_merged.lef"
-gds = "implementation/gds/sky130_fd_sc_hd.gds"
-layer_map = "implementation/gds/sky130A.map"
+tech_lef = "implementation/stacks/default/tech.lef"
+cell_lef = "implementation/common/cells.lef"
+gds = "implementation/common/stdcells.gds"
+layer_map = "implementation/common/layer.map"
 io_horizontal_layers = ["met3"]
 io_vertical_layers = ["met2"]
 routing_min_layer = "met1"
 routing_max_layer = "met5"
-tapcell_script = "implementation/tapcell.tcl"
-pdn_script = "implementation/pdn.tcl"
+tapcell_script = "implementation/common/scripts/tapcell.tcl"
+pdn_script = "implementation/common/scripts/pdn.tcl"
 fill_cells = ["sky130_fd_sc_hd__fill_8", "sky130_fd_sc_hd__fill_4", "sky130_fd_sc_hd__fill_2", "sky130_fd_sc_hd__fill_1"]
-rcx_rules = "implementation/rcx/sky130_fd_sc_hd__nom.rules"
+rcx_rules = "implementation/stacks/default/rcx.rules"
 
 [pdk.implementation.liberty]
-tt = ["implementation/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"]
+tt = ["implementation/common/lib/tt.lib.gz"]
 
 [pdk.simulation]
 engine = "ngspice"
-root = "libs.tech/ngspice"
+root = "simulation/ngspice"
 model_file = "sky130.lib.spice"
 section = "tt"
 includes = []
