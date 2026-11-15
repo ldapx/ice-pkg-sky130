@@ -6,8 +6,10 @@ definition for ICE. It points to the upstream PDK repository:
 <https://github.com/google/skywater-pdk>
 
 The package also contains the Sky130 ngspice simulation subset under
-`libs.tech/ngspice` and `libs.ref/sky130_fd_pr/spice`. Simulation depends only
-on this ICE package, not on Volare, CIEL, or `PDK_ROOT`.
+`libs.tech/ngspice` and `libs.ref/sky130_fd_pr/spice`, plus the
+`sky130_fd_sc_hd` standard-cell implementation set under `implementation/`.
+Simulation and physical implementation depend only on this ICE package, not on
+Volare, CIEL, `PDK_ROOT`, or an external OpenROAD-flow-scripts checkout.
 
 ## PDK metadata
 
@@ -35,9 +37,10 @@ The package ships ICE-native PCell replicas under `layout/`:
 - `layout/pcells.py` implements the SKY130 PCell families with the
   `icepy.pcells` layout builder API (MOS, BJT, resistors, capacitors, diodes,
   RF devices, via stacks, and guard rings).
-- `layout/devices.json` is the generated ICE layout device library used by the
-  Devices panel. It contains default geometry, parameter metadata, and
-  generator bindings.
+- `layout/devices.json` indexes the device library used by the Devices panel.
+  Every device is a real layout cell stored as
+  `layout/devices/<name>.icelay`; the index carries categories and generator
+  bindings.
 - `layout/device_generator.py` regenerates geometry when a parameter changes.
 - `layout/generate_devices.py` rebuilds the library from the PCell definitions.
 
@@ -53,6 +56,22 @@ Regenerate the library after editing `layout/pcells.py`:
 PYTHONPATH=<ice>/build/linux/x86_64/release:<ice>/python \
   python3 layout/generate_devices.py
 ```
+
+## Physical implementation
+
+`package.toml` declares explicit implementation data for the high-density
+`sky130_fd_sc_hd` standard-cell library:
+
+- `implementation/lef/` — technology LEF and merged cell LEF;
+- `implementation/lib/` — `tt_025C_1v80` Liberty;
+- `implementation/gds/` — merged standard-cell GDS and the KLayout DEF-to-GDS
+  layer map;
+- `implementation/rcx/` — nominal OpenRCX extraction rules;
+- `implementation/tapcell.tcl` and `implementation/pdn.tcl` — tapcell and
+  best-effort power-grid hooks used during floorplan.
+
+The default placement site is `unithd` and the default corner is `tt`. No
+`OPENROAD_FLOW_SCRIPTS` environment variable is needed.
 
 ## Simulation
 

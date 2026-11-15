@@ -720,6 +720,12 @@
       "color": "#16a085",
       "pattern": "Solid",
       "visible": false
+    },
+    {
+      "name": "boundary",
+      "color": "#95a5a6",
+      "pattern": "Grid",
+      "visible": false
     }
   ]
 }

@@ -28,21 +28,207 @@ default_schematic = "sky130_top"
 id = "sky130A"
 aliases = ["sky130", "sky130a"]
 
+[[pdk.layer]]
+name = "mcon.drawing"
+number = 67
+datatype = 44
+minimum_width = 0
+
+[[pdk.layer]]
+name = "via.drawing"
+number = 68
+datatype = 44
+minimum_width = 0
+
+[[pdk.layer]]
+name = "via2.drawing"
+number = 69
+datatype = 44
+minimum_width = 0
+
+[[pdk.layer]]
+name = "via3.drawing"
+number = 70
+datatype = 44
+minimum_width = 0
+
+[[pdk.layer]]
+name = "via4.drawing"
+number = 71
+datatype = 44
+minimum_width = 0
+
+[[pdk.layer]]
+name = "licon1.drawing"
+number = 66
+datatype = 44
+minimum_width = 0
+
+[[pdk.layer]]
+name = "nwell.label"
+number = 64
+datatype = 5
+minimum_width = 0
+
+[[pdk.layer]]
+name = "nwell.pin"
+number = 64
+datatype = 16
+minimum_width = 0
+
+[[pdk.layer]]
+name = "pwell.label"
+number = 64
+datatype = 59
+minimum_width = 0
+
+[[pdk.layer]]
+name = "pwell.pin"
+number = 122
+datatype = 16
+minimum_width = 0
+
+[[pdk.layer]]
+name = "li1.label"
+number = 67
+datatype = 5
+minimum_width = 0
+
+[[pdk.layer]]
+name = "li1.pin"
+number = 67
+datatype = 16
+minimum_width = 0
+
+[[pdk.layer]]
+name = "met1.label"
+number = 68
+datatype = 5
+minimum_width = 0
+
+[[pdk.layer]]
+name = "met1.pin"
+number = 68
+datatype = 16
+minimum_width = 0
+
+[[pdk.layer]]
+name = "met2.label"
+number = 69
+datatype = 5
+minimum_width = 0
+
+[[pdk.layer]]
+name = "met2.pin"
+number = 69
+datatype = 16
+minimum_width = 0
+
+[[pdk.layer]]
+name = "met3.label"
+number = 70
+datatype = 5
+minimum_width = 0
+
+[[pdk.layer]]
+name = "met3.pin"
+number = 70
+datatype = 16
+minimum_width = 0
+
+[[pdk.layer]]
+name = "met4.label"
+number = 71
+datatype = 5
+minimum_width = 0
+
+[[pdk.layer]]
+name = "met4.pin"
+number = 71
+datatype = 16
+minimum_width = 0
+
+[[pdk.layer]]
+name = "met5.label"
+number = 72
+datatype = 5
+minimum_width = 0
+
+[[pdk.layer]]
+name = "met5.pin"
+number = 72
+datatype = 16
+minimum_width = 0
+
+[[pdk.layer]]
+name = "hvtp.drawing"
+number = 78
+datatype = 44
+minimum_width = 0
+
+[[pdk.layer]]
+name = "areaid.standardc"
+number = 81
+datatype = 4
+minimum_width = 0
+
+[[pdk.layer]]
+name = "cellname"
+number = 83
+datatype = 44
+minimum_width = 0
+
+[[pdk.layer]]
+name = "nsdm.drawing"
+number = 93
+datatype = 44
+minimum_width = 0
+
+[[pdk.layer]]
+name = "psdm.drawing"
+number = 94
+datatype = 20
+minimum_width = 0
+
+[[pdk.layer]]
+name = "npc.drawing"
+number = 95
+datatype = 20
+minimum_width = 0
+
+[[pdk.layer]]
+name = "prBoundary.boundary"
+number = 235
+datatype = 4
+minimum_width = 0
+
+[[pdk.layer]]
+name = "boundary"
+number = 236
+datatype = 0
+minimum_width = 0
+
 [pdk.implementation]
 engine = "openroad"
 synthesis = "yosys"
 min_openroad = "2.0"
 min_yosys = "0.40"
 site = "unithd"
+tech_lef = "implementation/lef/sky130_fd_sc_hd.tlef"
+cell_lef = "implementation/lef/sky130_fd_sc_hd_merged.lef"
+gds = "implementation/gds/sky130_fd_sc_hd.gds"
+layer_map = "implementation/gds/sky130A.map"
 io_horizontal_layers = ["met3"]
 io_vertical_layers = ["met2"]
 routing_min_layer = "met1"
 routing_max_layer = "met5"
+tapcell_script = "implementation/tapcell.tcl"
+pdn_script = "implementation/pdn.tcl"
+fill_cells = ["sky130_fd_sc_hd__fill_8", "sky130_fd_sc_hd__fill_4", "sky130_fd_sc_hd__fill_2", "sky130_fd_sc_hd__fill_1"]
+rcx_rules = "implementation/rcx/sky130_fd_sc_hd__nom.rules"
 
-[pdk.implementation.orfs]
-platform = "sky130hd"
-corner = "tt"
-liberty_pattern = "tt_025C_1v80"
+[pdk.implementation.liberty]
+tt = ["implementation/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"]
 
 [pdk.simulation]
 engine = "ngspice"
