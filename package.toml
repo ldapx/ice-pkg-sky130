@@ -236,6 +236,7 @@ engine = "ngspice"
 root = "simulation/ngspice"
 model_file = "sky130.lib.spice"
 section = "tt"
+spiceinit = "spinit"
 includes = []
 options = [".option scale=1u"]
 requires_osdi = false
