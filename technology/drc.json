@@ -1,0 +1,53 @@
+{
+  "format": "ice-drc",
+  "schema_version": 1,
+  "engine": "klayout",
+  "name": "SkyWater SKY130 KLayout signoff deck",
+  "deck": "sky130A_mr.drc",
+  "search_paths": [
+    "$SKY130A_DRC_DIR",
+    "$PDK_ROOT/sky130A/libs.tech/klayout/drc",
+    "$SKY130_ROOT/sky130A/libs.tech/klayout/drc",
+    "$HOME/.volare/volare/sky130/versions/*/sky130A/libs.tech/klayout/drc",
+    "/usr/local/share/pdk/sky130A/libs.tech/klayout/drc",
+    "/usr/share/pdk/sky130A/libs.tech/klayout/drc",
+    "$HOME/.volare/sky130A/libs.tech/klayout/drc",
+    "$HOME/.volare/volare/sky130A/libs.tech/klayout/drc",
+    "$HOME/.ciel/ciel/sky130/versions/*/sky130A/libs.tech/klayout/drc",
+    "$HOME/.ciel/sky130A/libs.tech/klayout/drc",
+    "$HOME/pdks/sky130A/libs.tech/klayout/drc"
+  ],
+  "arguments": [
+    "-b",
+    "-r",
+    "{deck}",
+    "-rd",
+    "input={input}",
+    "-rd",
+    "report={report}",
+    "-rd",
+    "top_cell={top_cell}",
+    "-rd",
+    "feol=1",
+    "-rd",
+    "beol=1",
+    "-rd",
+    "offgrid=1"
+  ],
+  "suites": {
+    "beol": {
+      "deck": "sky130A.lydrc",
+      "arguments": [
+        "-b",
+        "-r",
+        "{deck}",
+        "-rd",
+        "input={input}",
+        "-rd",
+        "report={report}",
+        "-rd",
+        "top_cell={top_cell}"
+      ]
+    }
+  }
+}

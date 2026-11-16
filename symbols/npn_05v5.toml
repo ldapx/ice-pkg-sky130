@@ -2,6 +2,8 @@
 name = "SKY130 NPN 5.5V"
 artwork = "generic:npn_bjt.svg"
 category = "Transistor"
+label_x = 0
+label_y = 56
 
 [[pin]]
 name = "B"
@@ -21,6 +23,14 @@ x = 31
 y = -32
 direction = "inout"
 
+# Substrate. The SKY130 NPN subcircuits are four terminal devices
+# (collector, base, emitter, substrate), so tie this pin to the substrate net.
+[[pin]]
+name = "S"
+x = 31
+y = 0
+direction = "inout"
+
 [[parameter]]
 name = "model"
-value = "sky130_fd_pr__npn_05v5"
+value = "sky130_fd_pr__npn_05v5_W1p00L1p00"

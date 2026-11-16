@@ -1,0 +1,30 @@
+[symbol]
+name = "SKY130 PNP 5.5V"
+artwork = "generic:pnp_bjt.svg"
+category = "Transistor"
+label_x = 0
+label_y = 56
+
+# The SKY130 substrate PNP is a three terminal device: the collector is the
+# p-substrate, so no separate substrate pin is drawn.
+[[pin]]
+name = "B"
+x = -32
+y = 0
+direction = "input"
+
+[[pin]]
+name = "C"
+x = 31
+y = 32
+direction = "inout"
+
+[[pin]]
+name = "E"
+x = 31
+y = -32
+direction = "inout"
+
+[[parameter]]
+name = "model"
+value = "sky130_fd_pr__pnp_05v5_W0p68L0p68"

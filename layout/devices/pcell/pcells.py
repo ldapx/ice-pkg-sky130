@@ -15,17 +15,28 @@ PDK = "sky130A"
 
 LAYERS = {
     "nwell": ("nwell.drawing", 64, 20),
+    "pwell": ("pwell.drawing", 64, 44),
     "diff": ("diff.drawing", 65, 20),
+    "tap": ("tap.drawing", 65, 44),
     "poly": ("poly.drawing", 66, 20),
+    "licon1": ("licon1.drawing", 66, 44),
     "li1": ("li1.drawing", 67, 20),
+    "mcon": ("mcon.drawing", 67, 44),
     "met1": ("met1.drawing", 68, 20),
+    "via": ("via.drawing", 68, 44),
     "met2": ("met2.drawing", 69, 20),
+    "via2": ("via2.drawing", 69, 44),
     "met3": ("met3.drawing", 70, 20),
+    "via3": ("via3.drawing", 70, 44),
     "met4": ("met4.drawing", 71, 20),
+    "via4": ("via4.drawing", 71, 44),
     "met5": ("met5.drawing", 72, 20),
     "pad": ("pad.drawing", 76, 20),
     "capm": ("capm.drawing", 89, 44),
     "cap2m": ("cap2m.drawing", 97, 44),
+    "nsdm": ("nsdm.drawing", 93, 44),
+    "psdm": ("psdm.drawing", 94, 20),
+    "npc": ("npc.drawing", 95, 20),
 }
 
 # Additional PDK purposes exposed in the Layers panel. The base drawing
@@ -148,7 +159,7 @@ DIODE_PARAMETERS = [
 ]
 
 BJT_PARAMETERS = [
-    parameter("model", "sky130_fd_pr__npn_05v5", "Device model"),
+    parameter("model", "sky130_fd_pr__npn_05v5_W1p00L1p00", "Device model"),
     parameter("w", "1u", "Base width"),
     parameter("l", "1u", "Base length"),
 ]
