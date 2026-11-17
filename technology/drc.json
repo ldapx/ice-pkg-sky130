@@ -49,5 +49,6 @@
         "top_cell={top_cell}"
       ]
     }
-  }
+  },
+  "process": "sky130A"
 }

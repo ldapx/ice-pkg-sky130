@@ -1,0 +1,192 @@
+{
+  "format": "ice-pdk-connectivity",
+  "schema_version": 1,
+  "layers": [
+    {
+      "name": "diff",
+      "role": "active"
+    },
+    {
+      "name": "poly",
+      "role": "gate"
+    },
+    {
+      "name": "li1",
+      "role": "conductor"
+    },
+    {
+      "name": "met1",
+      "role": "conductor"
+    },
+    {
+      "name": "met2",
+      "role": "conductor"
+    },
+    {
+      "name": "met3",
+      "role": "conductor"
+    },
+    {
+      "name": "met4",
+      "role": "conductor"
+    },
+    {
+      "name": "met5",
+      "role": "conductor"
+    },
+    {
+      "name": "pad",
+      "role": "conductor"
+    },
+    {
+      "name": "licon1",
+      "role": "via"
+    },
+    {
+      "name": "mcon",
+      "role": "via"
+    },
+    {
+      "name": "via",
+      "role": "via"
+    },
+    {
+      "name": "via2",
+      "role": "via"
+    },
+    {
+      "name": "via3",
+      "role": "via"
+    },
+    {
+      "name": "via4",
+      "role": "via"
+    },
+    {
+      "name": "nwell",
+      "role": "marker"
+    },
+    {
+      "name": "pwell",
+      "role": "marker"
+    },
+    {
+      "name": "nsdm",
+      "role": "marker"
+    },
+    {
+      "name": "psdm",
+      "role": "marker"
+    },
+    {
+      "name": "npc",
+      "role": "marker"
+    },
+    {
+      "name": "hvtp",
+      "role": "marker"
+    },
+    {
+      "name": "prboundary",
+      "role": "marker"
+    },
+    {
+      "name": "boundary",
+      "role": "marker"
+    },
+    {
+      "name": "cellname",
+      "role": "marker"
+    },
+    {
+      "name": "areaid",
+      "role": "marker"
+    },
+    {
+      "name": "capm",
+      "role": "marker"
+    },
+    {
+      "name": "cap2m",
+      "role": "marker"
+    }
+  ],
+  "vias": [
+    {
+      "name": "licon1",
+      "lower": [
+        "diff",
+        "poly"
+      ],
+      "upper": [
+        "li1"
+      ],
+      "size": 170,
+      "enclosure": 50
+    },
+    {
+      "name": "mcon",
+      "lower": [
+        "li1"
+      ],
+      "upper": [
+        "met1"
+      ],
+      "size": 170,
+      "enclosure": 60
+    },
+    {
+      "name": "via",
+      "lower": [
+        "met1"
+      ],
+      "upper": [
+        "met2"
+      ],
+      "size": 150,
+      "enclosure": 60
+    },
+    {
+      "name": "via2",
+      "lower": [
+        "met2"
+      ],
+      "upper": [
+        "met3"
+      ],
+      "size": 200,
+      "enclosure": 70
+    },
+    {
+      "name": "via3",
+      "lower": [
+        "met3"
+      ],
+      "upper": [
+        "met4"
+      ],
+      "size": 200,
+      "enclosure": 70
+    },
+    {
+      "name": "via4",
+      "lower": [
+        "met4"
+      ],
+      "upper": [
+        "met5"
+      ],
+      "size": 800,
+      "enclosure": 310
+    }
+  ],
+  "routing": {
+    "stack": [
+      "met1",
+      "met2",
+      "met3",
+      "met4",
+      "met5"
+    ]
+  }
+}

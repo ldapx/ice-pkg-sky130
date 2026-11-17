@@ -245,6 +245,12 @@ requires_osdi = false
 nmos = "sky130_fd_pr__nfet_01v8"
 pmos = "sky130_fd_pr__pfet_01v8"
 
+[pdk.simulation.probe]
+w = "1"
+l = "0.15"
+vdd = 1.8
+vd = 0.9
+
 [[pdk.layer]]
 name = "nwell.drawing"
 number = 64
