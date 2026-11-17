@@ -184,6 +184,15 @@ COIL_PARAMETERS = [
 class _SkyPcell(pcells.PackagePcell):
     pdk = PDK
     layers = LAYERS
+    # met5 rules: 1.6 um minimum width and 4.0 um^2 minimum area.
+    top_metal_min_size = 2000
+    # Cut size and required metal enclosure per via level.
+    via_rules = {
+        "via": (150, 60),
+        "via2": (200, 60),
+        "via3": (200, 60),
+        "via4": (800, 310),
+    }
 
 
 class nfet(_SkyPcell):
