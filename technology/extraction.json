@@ -29,11 +29,22 @@
       "length_axis": "auto"
     },
     {
+      "name": "res_poly",
+      "type": "resistor",
+      "model": "sky130_fd_pr__res_high_po",
+      "element": "R",
+      "body": "poly",
+      "require_layers": ["poly.res"],
+      "terminal_layers": ["met1"],
+      "sheet_resistance": 345.8
+    },
+    {
       "name": "mim_cap",
       "type": "capacitor",
       "model": "sky130_fd_pr__cap_mim_m3_1",
       "element": "C",
-      "plates": ["capm", "met2"],
+      "plates": ["met3", "met4"],
+      "require_layers": ["capm"],
       "capacitance_per_area": 2.0
     }
   ]

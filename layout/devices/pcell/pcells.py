@@ -17,12 +17,15 @@ LAYERS = {
     "nwell": ("nwell.drawing", 64, 20),
     "pwell": ("pwell.drawing", 64, 44),
     "diff": ("diff.drawing", 65, 20),
+    "diff.res": ("diff.res", 65, 13),
     "tap": ("tap.drawing", 65, 44),
     "poly": ("poly.drawing", 66, 20),
+    "poly.res": ("poly.res", 66, 13),
     "licon1": ("licon1.drawing", 66, 44),
     "li1": ("li1.drawing", 67, 20),
     "mcon": ("mcon.drawing", 67, 44),
     "met1": ("met1.drawing", 68, 20),
+    "met1.res": ("met1.res", 68, 13),
     "via": ("via.drawing", 68, 44),
     "met2": ("met2.drawing", 69, 20),
     "via2": ("via2.drawing", 69, 44),
@@ -266,9 +269,14 @@ class mim_cap(_SkyPcell):
     name = "mim_cap"
     category = "Passives"
     family = "mim_cap"
-    cap_bottom = "met1"
-    cap_top = "met2"
+    # SKY130's MIM stack is met3 (bottom) and met4 (top), with capm as the
+    # capacitor-recognition marker. Using met1/met2 here silently ties the
+    # capacitor to the lower routing layers and hides it from PEX.
+    cap_bottom = "met3"
+    cap_top = "met4"
     cap_marker = "capm"
+    # capm.3_a requires met3 to enclose capm by at least 0.14 um.
+    cap_marker_inset = 200
     parameters = CAP_PARAMETERS
 
 
